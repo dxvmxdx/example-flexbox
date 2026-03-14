@@ -1,0 +1,147 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* XEIcon */
+@import url('https://cdn.jsdelivr.net/gh/xpressengine/XEIcon@2.3.3/xeicon.min.css');
+/* RESET CSS */
+@import './reset.css';
+
+/* Global */
+:root {
+  /* Colors */
+  --color-facebook: #3b5998;
+  --color-twitter: #1d9bf0;
+  --color-google: #ea4335;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+input,
+button {
+  font-family: inherit;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* login form */
+.loginForm {
+  padding: 30px;
+  width: 600px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.loginForm__title {
+  font-size: 24px;
+}
+
+.snsLogin {
+  display: flex;
+  justify-content: space-between;
+  gap: 6px;
+  margin: 20px 0;
+}
+
+.snsLogin__btn {
+  flex: 1;
+  padding: 5px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.snsLogin-facebook {
+  background-color: var(--color-facebook);
+}
+
+.snsLogin-twitter {
+  background-color: var(--color-twitter);
+}
+
+.snsLogin-google {
+  background-color: var(--color-google);
+}
+.snsLogin-facebook::before,
+.snsLogin-twitter::before,
+.snsLogin-google::before {
+  font-family: 'xeicon';
+  display: inline-block;
+  transform: translateY(1px);
+}
+
+.snsLogin-facebook::before {
+  content: '\ebd3';
+}
+
+.snsLogin-twitter::before {
+  content: '\ec1f';
+}
+
+.snsLogin-google::before {
+  content: '\ebe0';
+}
+
+.field {
+  display: flex;
+  margin: 20px 0;
+}
+
+.field__label {
+  flex-basis: 120px;
+}
+
+.loginForm__input {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.field-login {
+  text-align: right;
+}
+
+.login {
+  padding: 5px;
+  border-radius: 4px;
+  width: 120px;
+  background-color: #2196f3;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .loginForm {
+    margin: 20px;
+    width: 100%;
+  }
+
+  .snsLogin {
+    flex-direction: column;
+  }
+
+  .field {
+    flex-direction: column;
+  }
+  .field__label {
+    flex: 1;
+  }
+
+  .login {
+    width: 100%;
+  }
+}

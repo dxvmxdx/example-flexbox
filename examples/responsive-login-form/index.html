@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>responsive login form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form class="loginForm">
+      <h2 class="loginForm__title">Registration</h2>
+      <div class="snsLogin">
+        <button class="snsLogin__btn snsLogin-facebook">
+          Log in with Facebook
+        </button>
+        <button class="snsLogin__btn snsLogin-twitter">
+          Log in with Twitter
+        </button>
+        <button class="snsLogin__btn snsLogin-google">
+          Log in with Google
+        </button>
+      </div>
+      <div class="field">
+        <label class="field__label" for="name">User Name</label>
+        <input
+          class="loginForm__input loginForm__input-name"
+          type="text"
+          id="name"
+        />
+      </div>
+      <div class="field">
+        <label class="field__label" for="email">E-mail</label>
+        <input
+          class="loginForm__input loginForm__input-email"
+          type="email"
+          id="email"
+        />
+      </div>
+      <div class="field">
+        <label class="field__label" for="password">Password</label>
+        <input
+          class="loginForm__input loginForm__input-password"
+          type="password"
+          id="password"
+        />
+      </div>
+      <div class="field-login">
+        <button class="login">Login</button>
+      </div>
+    </form>
+  </body>
+</html>
