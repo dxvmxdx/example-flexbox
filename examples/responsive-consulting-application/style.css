@@ -1,0 +1,172 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+/* RESET CSS */
+@import './reset.css';
+
+/* Global */
+:root {
+  /* Colors */
+  --color-text: #222;
+  --color-accent: #c0392b;
+  --color-second: #48dbfb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.5;
+  word-break: keep-all;
+  color: var(--color-text);
+  padding: 20px;
+}
+
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  margin: auto;
+  width: 1200px;
+}
+
+/* Header */
+header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h1 {
+  position: relative;
+  margin-bottom: 60px;
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+h1::after {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90px;
+  height: 2px;
+  background-color: #48dbfb;
+}
+
+h1 > em {
+  color: var(--color-accent);
+}
+
+/* Form */
+form {
+  border-top: 5px solid #ddd;
+  padding: 30px 0;
+}
+
+.row {
+  display: flex;
+  gap: 30px;
+  margin: 10px 0;
+}
+
+.field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.field label {
+  font-weight: 400;
+}
+
+.field input,
+.field textarea,
+.field select {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.field input:hover,
+.field textarea:hover {
+  border: 1px solid var(--color-second);
+}
+
+.field input:focus,
+.field textarea:focus {
+  background-color: #eee;
+}
+
+.required::after {
+  content: '\002A';
+  color: var(--color-accent);
+}
+
+h4 {
+  margin: 5px;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.policy iframe {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  height: 100px;
+}
+
+.apply {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.applyBtn {
+  padding: 8px 50px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.applyBtn:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .applyBtn {
+    width: 100%;
+  }
+}
