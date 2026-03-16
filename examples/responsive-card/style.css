@@ -30,9 +30,14 @@ body {
   background-color: #eee;
 }
 
+/* ✅ img 태그에 width를 직접 설정하지 않고 div로 한번 감싸주기 */
 .card__image {
-  width: 100px; /* ✅ */
   flex: 2;
+  width: 100px;
+}
+
+.image {
+  width: 100%;
 }
 
 .card__content {
