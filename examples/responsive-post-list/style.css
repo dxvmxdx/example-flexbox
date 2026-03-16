@@ -1,0 +1,109 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* XEIcon */
+@import url('https://cdn.jsdelivr.net/gh/xpressengine/XEIcon@2.3.3/xeicon.min.css');
+/* RESET CSS */
+@import './reset.css';
+
+/* Global */
+:root {
+  /* Colors */
+  --color-primary: #1abc9c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.container {
+  margin: auto;
+  width: 1000px;
+  display: flex;
+}
+
+.post {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ✅ 교차 배열 */
+.post:nth-child(even) {
+  flex-direction: column-reverse;
+}
+
+.post__image {
+  width: 250px;
+  overflow: hidden;
+}
+
+.post__image img {
+  display: block; /* ✅ img 태그의 margin 없애기 위해 */
+  width: 100%;
+  transition: 0.3s;
+}
+
+.post__image img:hover {
+  transform: scale(1.05);
+}
+
+.post__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 250px;
+  background-color: var(--color-primary);
+  color: #fff;
+  text-align: center;
+}
+
+.post__description h3 {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .post {
+    flex-direction: row;
+  }
+
+  .post:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .post__image {
+    flex: 1;
+  }
+  .post__description {
+    flex: 1;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .post:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .post__image {
+    width: 100%;
+  }
+}

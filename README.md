@@ -39,3 +39,11 @@ flexbox를 이용한 레이아웃 예제
 ![responsive gallery desktop](<./screenshot/responsive-gallery(desktop).png>)
 ![responsive gallery tablet](<./screenshot/responsive-gallery(tablet).png>)
 ![responsive gallery mobile](<./screenshot/responsive-gallery(mobile).png>)
+
+<br>
+
+# responsive post list
+
+![responsive post list desktop](<./screenshot/responsive-post-list(desktop).png>)
+![responsive post list tablet](<./screenshot/responsive-post-list(tablet).png>)
+![responsive post list mobile](<./screenshot/responsive-post-list(mobile).png>)
