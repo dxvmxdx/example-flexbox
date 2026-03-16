@@ -31,3 +31,11 @@ flexbox를 이용한 레이아웃 예제
 
 ![responsive consulting application desktop](<./screenshot/responsive-consulting-application(desktop).png>)
 ![responsive consulting application mobile](<./screenshot/responsive-consulting-application(mobile).png>)
+
+<br>
+
+## responsive gallery
+
+![responsive gallery desktop](<./screenshot/responsive-gallery(desktop).png>)
+![responsive gallery tablet](<./screenshot/responsive-gallery(tablet).png>)
+![responsive gallery mobile](<./screenshot/responsive-gallery(mobile).png>)
